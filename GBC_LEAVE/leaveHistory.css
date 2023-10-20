@@ -1,0 +1,122 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.leaveHistory-Wrapper-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 650px;
+    background-color: rgba(232, 231, 231, 0.653);
+}
+
+.Leavebreakdown-container-div{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.LeaveText-div{
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+}
+
+.LeaveText-div h3{
+    color: rgb(4, 7, 32);
+}
+.LeaveText-div h3::first-letter{
+    font-size: 30px;
+}
+.leaveHistory-container-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    padding:10px;
+    justify-content: space-around;
+}
+.appliedLeave-div{
+    width: 20%;
+    height: 65%;
+    background-color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction:row;
+    transition: (2s);
+    overflow: hidden;
+}
+.appliedLeave-div:hover{
+    transform: scale(1.04);
+}
+.AppliedText-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+
+}
+.logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color:rgb(4, 7, 32); 
+}
+.numberDiv , .textDiv{
+    height:45%;
+    padding: 7%;
+}
+.numberDiv span , .textDiv span{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(4, 7, 32, 0.661);
+}
+.leaveHistoryTable-WrapperDiv{
+    width: 100%;
+    height: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leaveHistory-ContainerDiv{
+    width: 94%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+}
+.AllLeaveText-div{
+    width:100%;
+    padding: 10px;
+    margin-bottom:1%;
+}
+.table-div{
+    width:100%;
+}
+.table-div table{
+    width: 100%;
+    margin-top: 1%;
+    border-collapse: collapse;
+}
+table td ,table th{
+    border: 1px solid #ddd;
+}
+table th{
+   padding-top:10px;
+   padding-bottom:5px;
+   padding-left: 2px; 
+   text-align: left;
+   background-color: rgba(222, 184, 135, 0.234);
+   color: rgba(4, 7, 32, 0.875);
+}
+
+
