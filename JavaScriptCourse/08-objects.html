@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects - JAVASCRIPT</title>
+</head>
+<body>
+  <h1 id="Demo"></h1>
+
+  <script>
+    const Car = new Object();
+    Car.name = "Toyota";
+    Car.model = "Land cruiser";
+    Car.mileage = " 100,000km" ;
+
+    Car.fun = function function1(){
+      console.log(`i love ${Car.model}`)
+    }
+    Car.fun()
+
+    console.log (JSON.stringify(Car));
+    const jsonString =JSON.stringify(Car);
+    JSON.parse(jsonString);
+
+    console.log(JSON.parse(jsonString))
+
+  </script>
+</body>
+</html>
