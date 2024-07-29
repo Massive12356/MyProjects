@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Staff Details</title>
+  <link rel="stylesheet" href="/css/AddStaffDetails.css">
+  <link rel="icon" href="/images/GBClogo.png">
+
+  <style>
+    /* Add your styles here */
+    #otherInput {
+        display: none;
+        border-right: 0;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 2px solid grey; /* Set border to zero */
+        margin-top: 5px; /* Add some top margin for spacing */
+        outline: none;
+        margin-left: 5px;
+    }
+</style>
+
+</head>
+<body>
+  <div class="LOGO-TEXT-WRAPPER"> 
+    <div class="textDiv">
+      <h2>STAFF  Information Portal</h2>
+
+    </div>
+    <div class="LogoDiv">
+      <img src="/images/GBClogo.png" alt=""> 
+    </div>
+  </div> 
+  <div class="FORM-WRAPPER">
+    <div class="Form-text-ContainerDiv">
+      <div class="TxtDiv">
+        <h4>Kindly enter staff details below</h4>
+      </div>
+      <div class="formDiv">
+        <form action="">
+          <div class="inputWrapper-div">
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>First Name</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>Middle Name</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>Last Name</span>
+            </div>
+          </div>
+
+          <div class="inputWrapper-div">
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>Staff ID</span>
+            </div>
+            
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>Rank</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>JOB TITLE</span>
+            </div>
+          </div>
+
+          <div class="inputWrapper-div">
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>Phone Number</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>Email Address</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id=""  required>
+              <span>CAGD NO</span>
+            </div>
+          </div>
+
+          <div class="inputWrapper-div">
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>location</span>
+            </div>
+
+            <div class="inputBox Date" id="inputContainer">
+              <span>Division</span>
+              <select name="" id="dynamicSelect" onchange="checkOtherOption(this, 'otherInput', 'belowElements')">
+                <option value="">
+                  INTERNAL AUDIT
+                </option>
+                <option value="">
+                  COLLEGE
+                </option>
+                <option value="">
+                  LEGAL
+                </option>
+                <option value="">
+                  CORPORATE AFFAIRS
+                </option>
+                <option value="">
+                  NEWS
+                </option>
+                <option value="">
+                  PROGRAMMES
+                </option>
+                <option value="">
+                  TECHNOLOGY
+                </option>
+                <option value="">
+                  MARKETING
+                </option>
+                <option value="">
+                  ADMIN
+                </option>
+                <option value="">
+                  HUMAN RESOURCE (HR)
+                </option>
+                <option value="">
+                  FINANCE
+                </option>
+                <option value="">
+                  RESEARCH,STRATEGY & INNOVATION (RSI)
+                </option>
+                <option value="other">
+                  Other
+                </option>
+              </select>
+              <input type="text" name="" id="otherInput"  required >
+            </div>
+
+            <div class="inputBox Date" id="inputContainer1">
+              <span>DEPARTMENT</span>
+              <select name="" id="dynamicSelect1" onchange="checkOtherOption(this, 'otherInput1', 'belowElements')">
+                <option value="">
+                  TV
+                </option>
+                <option value="">
+                  RADIO
+                </option>
+                <option value="">
+                  ONLINE
+                </option>
+                <option value="">
+                  ENGINEERING
+                </option>
+                <option value="">
+                  TECHNICAL PRODUCTION
+                </option>
+                <option value="">
+                  INFORMATION TECHNOLOGY (IT)
+                </option>
+                <option value="">
+                  SALES & CUSTOMER SERVICE
+                </option>
+                <option value="">
+                  BRANDS MANAGEMENT
+                </option>
+                <option value="">
+                  ESTATE
+                </option>
+                <option value="">
+                  PROCUREMENT
+                </option>
+                <option value="">
+                  TRANSMISSION (TX)
+                </option>
+                <option value="">
+                  RECORDS MANAGEMENT (REC.MGT)
+                </option>
+                <option value="">
+                  TRANSPORT
+                </option>
+                <option value="">
+                  HUMAN RESOURCE PLANNING & DEVELOPMENT (HRPD)
+                </option>
+                <option value="">
+                  PERFORMANCE MANAGEMENT
+                </option>
+                <option value="">
+                  WELFARE
+                </option>
+                <option value="">
+                  FINAL ACCOUNT
+                </option>
+                <option value="">
+                  CREDIT CONTROL & REVENUE (CCR)
+                </option>
+                <option value="">
+                  TREASURY
+                </option>
+                <option value="">
+                  BUDGET / COSTING (BDGT/CST)
+                </option>
+                <option value="">
+                  TV LICENSE
+                </option>
+                <option value="other">
+                  Other
+                </option>
+              </select>
+              <input type="text" name="" id="otherInput1" required >
+            </div>
+
+          </div>
+
+          <div class="inputWrapper-div belowElements">
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>new grade</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required>
+              <span>ssnit number</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id=""  required >
+              <span>REGION</span>
+            </div>
+          </div>
+
+          <div class="inputWrapper-div">
+            <div class="inputBox Date">
+              <input type="date" name="" id="" required >
+              <span>incremental date </span>
+            </div>
+
+            <div class="inputBox Date">
+              <input type="date" name="" id="" required >
+              <span>Date of first appointment</span>
+            </div>
+
+            <div class="inputBox Date">
+              <input type="date" name="" id=""  required >
+              <span>Date of present appointment</span>
+            </div>
+          </div>
+
+          <div class="inputWrapper-div">
+            <div class="inputBox Date">
+              <input type="date" name="" id="" required >
+              <span>Date of birth</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>Ghana CARD number</span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id=""  required >
+              <span>Qualification</span>
+            </div>
+          </div>
+
+          <div class="inputWrapper-div">
+            <div class="inputBox Date">
+              <span>SEX</span>
+              <select name="" id="">
+                <option value="">
+                  Male
+                </option>
+                <option value="">
+                  Female
+                </option>
+                <option value="">
+                  Other
+                </option>
+              </select>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>REMARKS / ACTION </span>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>LEVEL / STEP</span>
+            </div>
+          </div>
+          <div class="inputWrapper-div">
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>next of kin phone number</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" id="" required >
+              <span>next of kin full name</span>
+            </div>
+          </div>
+
+          <div class="SubmitBtnDiv">
+            <img src="/images/upload.png" alt="">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/Javascript/AddStaffDetails.js"></script>
+</body>
+</html>
