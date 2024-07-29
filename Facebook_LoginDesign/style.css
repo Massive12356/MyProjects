@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #eceaeadc;
+}
+.FB{
+    color:#2F58CD;
+    font-size: 3.5rem;
+    font-weight:800;
+}
+.WFTW , .YOF{
+    font-size: 30px;
+}
+.text-connect{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 12%;
+}
+.form-container{
+    position: absolute;
+    margin-left: 56%;
+    margin-top: 10%;
+    padding: 17px;
+    width: 27%;
+    height: 47%;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 0 5px gray;
+}
+.createPage{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10%;
+    padding-right: 17%;
+    font-size: 14px;
+}
+.createPage a{
+    color: black;
+    text-decoration: none;
+}
+.createPage a:hover{
+    text-decoration: underline;}
+.EmailInputField{
+    box-sizing: border-box;
+    width: 100%;
+    height: 49px;
+    border-radius: 5px;
+    border-color:rgba(0, 0, 0,0.1);
+    padding-left: 15px;
+    font-size: large;
+    margin-bottom: 10px;
+    outline: none;
+    caret-color: RGB(43, 44, 170);
+}
+::placeholder{
+font-size: 17px;
+color: rgba(171, 183, 183);
+}
+.PassInputFeild{
+    box-sizing: border-box;
+    width: 100%;
+    height: 49px;
+    border-radius:5px ;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-color:rgba(0, 0, 0,0.1);
+    font-size: large;
+    outline:none;
+    caret-color: RGB(43, 44, 170);
+}
+button.login-btn{
+    width: 100%;
+    height: 48px;
+    background-color: rgb(15, 74, 250,0.9);
+    border-radius: 5px;
+    border:none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+.ForgotPassword{
+    margin-left: 36%;
+    color: rgb(15, 74, 250,0.9);
+    font-size:14px;
+    text-decoration: none;
+}
+.ForgotPassword:hover{
+    text-decoration: underline;
+}
+hr{
+    margin-top: 25px;
+    margin-bottom: 29px;
+}
+button.New-Account{
+ width: 53%;
+ height: 48px;
+ border-radius: 5px;
+ background-color: rgba(45, 184, 2, 0.97);
+ color: white;
+ border: none;
+ margin-left:22%;
+ font-size: large;
+ cursor: pointer;
+ font-weight:bold;
+}
+button.New-Account:hover{
+    background-color:rgba(38, 156, 3, 0.8) ;
+}
+.EmailInputField:focus{
+    border: 1px solid rgba(15, 74, 250,0.9);;
+    box-shadow: 0 0 2px 2px rgb(15, 74, 250,0.1);
+}
+.PassInputFeild:focus{
+    border: 1px solid rgba(15, 74, 250,0.9);;
+    box-shadow: 0 0 2px 2px rgb(15, 74, 250,0.1);
+}

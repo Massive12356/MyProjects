@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT-DOM</title>
+  </head>
+  <style>
+    #demo {
+      font-size: xx-large;
+      color: red;
+      text-transform: uppercase;
+    }
+    #image{
+      width: 40%;
+    }
+  </style>
+  <body>
+    <form id="frm1" action="/action_page.php">
+      First name: <input type="text" name="fname" value="Donald"><br>
+      Last name: <input type="text" name="lname" value="Duck"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    
+    <p id="demo1">These are the values of each element in the form:</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <img id="image" src="images/2.jpg" alt="">
+
+    <!-- <p>Finding HTML Elements by Class Name.</p>
+    <p id="intro">Hello World!</p>
+    <p id="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+    <p id="demo"></p> -->
+
+    <!-- 
+      SELECTING ELEMENTS USING THE ID
+      <div id="main">
+      <p>Finding HTML Elements by Id</p>
+      <p>This example demonstrates the <b>getElementsById</b> method.</p>
+    </div>
+
+    <p id="demo"></p> 
+     -->
+    <script>
+      const  myDate = Date();
+      alert(myDate);
+      const form = document.forms['frm1'];
+      let text = '';
+      for (let i=0; i< form.length; i++){
+        text += form.elements[i].value + "<br>"
+      }
+      document.getElementById('demo').innerHTML=text;
+
+      document.getElementById('demo2').innerHTML= "Date : " + Date();
+
+      const demo1 = document.getElementById('demo1');
+      demo1.style.color="red";
+
+      document.getElementById("image").src="./images/3.jpg"
+
+      console.log(document.body.innerHTML)
+      // const x = document.querySelectorAll('#intro');
+      // document.getElementById('demo').innerHTML = "The text from the intro paragraph is :" + x[0].innerHTML;
+      // const x = document.getElementById("main");
+      // const y = x.getElementsByTagName("p");
+      // document.getElementById("demo").innerHTML =
+      //   "The text from the intro paragraph is: " + y[1].innerHTML;
+      // document.title='DOM';
+      // document.getElementById('demo').innerHTML='HELLO WORLD !';
+    </script>
+  </body>
+</html>

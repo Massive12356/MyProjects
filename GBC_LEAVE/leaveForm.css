@@ -1,0 +1,146 @@
+*{ /* ignore line 1 to 46 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{ 
+    display: flex;
+    flex-direction: column;
+}
+.leaveForm-wrapper{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 650px;
+    background-color:rgba(232, 231, 231, 0.653);
+    justify-content: space-between;
+}
+.dashboard-Leave-container{ 
+    display: flex; 
+    flex: column;
+    width: 22%;
+    height:620px;
+    margin-top:10px;
+    border-radius: 8px;
+    background-color: midnightblue;
+}
+.gbcLogo-div{ 
+    width: 100%;
+    height: 100px;
+    background-color: chartreuse;
+}
+.staff-form-container{ 
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    height: 650px;
+}
+.pic-name-container{ 
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100px;
+    background-color: burlywood;
+    margin-bottom: 20px;
+}
+      /* DON'T IGNORE THE CODE BELOW*/
+
+.Form-container{   /* This contains the styles of the Form container*/
+    width: 98%;
+    height:520px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgb(202, 201, 201);
+}
+.Gbc-logo{
+    width:25%;
+    float: right;
+}
+.staff_Form-div{ /* This contains the styles of the staff_Form-div*/
+    width:50%;
+    height: 70px;
+    padding: 3%;
+    margin-bottom: 10px;
+}
+.staff_Form-div h3{  /* This contains the styles that styled the text inside the staff_Form-div*/
+    color:rgb(4, 7, 32);
+}
+.staff_Form-div h3::first-letter{ /* This contains the styles that styled the  First-letter of the text inside the staff_Form-div*/
+    font-size: 30px;
+}
+.personalDetails-div{ /* This contains the styles that styled the personalDetails-div*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    margin-bottom: 10px;
+}
+.ApplyBtn{ /* This contains the styles that styled the Apply button*/
+    padding:10px;
+    background-color: rgb(4, 7, 32);
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin-right: 6px;
+    animation-name: ApplyBtn;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+}
+@keyframes ApplyBtn{ /* This contains the styles that styled the Apply button*/
+    from{
+        padding:10px;
+    }
+    to{
+        padding:14px;
+    }
+}
+.ApplyBtn:hover{ /* This contains the styles that styled the Apply button*/
+    background-color: rgb(1, 3, 20);
+}
+.input-div1{ /* This contains the styles that styled the div containing the inputFields */
+    width:100%;
+    margin-bottom: 25px;
+}
+.input-div2{ /* This contains the styles that styled the div containing the inputFields */
+    display: flex;
+    width: 100%;
+}
+.label-div{ /* This contains the styles that styled the labels of  the inputFields */
+    width: 50%;
+}
+.inputField1,.inputField2{ /* This contains the styles that styled  the inputFields */
+    width:30%;
+    height: 40px;
+    margin-left: 5px;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 4px;
+    outline: none;
+    padding-left:4px;
+    font-size: 15px;
+    caret-color: rgb(5, 5, 90);
+    transition: width 2s;
+}
+.inputField1:focus{ /* This contains the styles that styled  the inputFields */
+    border: 1px solid rgb(5, 5, 90);
+    width: 33%;
+}
+.inputField2:focus{ /* This contains the styles that styled  the inputFields */
+    border: 1px solid rgb(5, 5, 90);
+    width: 35%;
+}
+.input1{ /* This contains the styles that styled  the inputFields */
+    width: 35%;
+    margin-right: 10%;
+}
+.input1:focus{ /* This contains the styles that styled  the inputFields */
+    width: 40%;
+}
+small{ /* This contains the styles that styled  the text of the label */
+    margin: 7px;
+    color: rgb(81, 79, 79);
+}
+

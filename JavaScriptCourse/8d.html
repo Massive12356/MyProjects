@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects Exer 4</title>
+</head>
+<body>
+  <script>
+    
+
+    // Function to compare prices of two products
+function comparePrice(product1, product2) {
+    if (product1.price < product2.price) {
+        return product1;
+    } else {
+        return product2;
+    }
+}
+
+// Creating two product objects
+const iphone= {
+    name: 'iphone',
+    price: 20.99
+};
+
+const samsung = {
+    name: 'samsung',
+    price: 15.49
+};
+
+// Testing the comparePrice function
+const cheaperProduct = comparePrice(iphone, samsung);
+
+// Displaying the result
+console.log(`The cheaper product is: ${cheaperProduct.name} with a price of ${cheaperProduct.price}`);
+
+
+  </script>
+</body>
+</html>

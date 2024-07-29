@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.BankCard-container-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    height:250px;
+    background-image: linear-gradient(rgb(237, 232, 232),rgb(88, 86, 86));
+    border-radius: 10px;
+    box-shadow: 0 0 20px gray   ;
+    transition: (2s);
+}
+.BankCard-container-div:hover{
+transform: scale(1.1);
+}
+.BankLogo-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 40px;
+    background-color: rgb(61, 61, 61) ;
+    margin-top: 20px;
+    border-bottom-right-radius: 30px;
+}
+.FidelityBankLogo-div .F-Logo{
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+}
+.FidelityBankLogo-div{
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+.Fidelity-div{
+    margin-left:18px;
+    margin-top: 7px;
+}
+.Bank-div{
+    margin-top: 8px;
+
+}
+.bank{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.Fidelity{
+    color: white;
+    font-weight: bold;
+    font-size:medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.Sim-container-div{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.number-div{
+    width: 100%;
+    height: 30px;    
+}
+
+.digits1{
+    font-size:25px ;
+    margin-left: 40px;
+    letter-spacing: 2px;
+}
+.digits{
+    font-size: 25px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+.validDate-div{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 40px;
+}
+.Good h5{
+    margin-top:20px ;
+    margin-left: 40px;
+    font-size: 10px;
+}
+.validDate{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.datenum{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.clientName-Visa-Container-div{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 50px;
+    justify-content: space-between;
+}
+.visa-div{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.Visa{
+    width: 50%;
+    height: 35px;
+}
+.ClientName-div{
+    margin-top: 6%;
+    margin-left: 6%;
+}
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+.sim-div{
+    flex-basis: 55%;
+}
+.sim{
+    position: relative;
+    width: 60%;
+    border-radius:5px ;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.Signal{
+    position: absolute;
+    margin-top: 1%;
+    transform: rotate(90deg);
+    margin-right: 20px;
+}

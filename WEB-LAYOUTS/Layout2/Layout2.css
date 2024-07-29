@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: darksalmon;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+}
+#logo-div{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    height: 50px;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 2%;
+}
+.Main-div{
+    display: flex;
+    flex-direction: row;
+    height: 530px;
+    justify-content: space-between;
+}
+.Side-Nav-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    background-color:lavenderblush;
+    margin-bottom: 2%;
+}
+#side-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+#nav-div{
+    display: flex;
+    flex-direction: row;
+}
+.Head-banner-body-div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+}
+#Head-banner{
+display: flex;
+flex-direction: row;
+height: 150px; 
+justify-content: center;
+align-items: center;  
+margin-bottom: 3%; 
+background-color: lightgray;
+}
+#BodyArea-div{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    height:400px ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+#footer-div{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+}

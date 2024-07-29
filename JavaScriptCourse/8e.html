@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects Exer 5</title>
+</head>
+<body>
+  <script>
+
+    function isSameProduct(product1,product2){
+      if (product1 === product2){
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    const productA = {
+      name: 'samsung'
+    }
+
+    const productB = {
+      name: 'samsung'
+    }
+    
+    const productLogic = isSameProduct(productA.name, productB.name)
+
+    console.log(productLogic)
+
+
+  </script>
+</body>
+</html>
